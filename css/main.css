@@ -1,0 +1,16 @@
+/* Base */
+@import "base/variables.css";
+@import "base/reset.css";
+@import "base/base.css";
+
+/* Layout */
+@import "layout/main.css";
+
+/* Components */
+@import "components/header.css";
+@import "components/footer.css";
+@import "components/cards.css";
+@import "components/pagination.css";
+
+/* Responsive (sempre por último para sobrescrever componentes) */
+@import "layout/responsive.css";

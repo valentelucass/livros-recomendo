@@ -1,0 +1,44 @@
+:root {
+  --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --text-primary: #f5f7ff;
+  --text-secondary: #b7c0d4;
+  --accent-color: #f5f7ff;
+  --glass-tint-rgb: 16, 18, 28;
+
+  /* ========== ONDE AJUSTAR TRANSPARÊNCIA ==========
+   * Valores menores = mais transparente (menos leitoso).
+   * Botões: --glass-bg-btn, --glass-bg-btn-hover, --glass-bg-btn-disabled
+   * Cards:  --glass-bg-card, --glass-bg-card-hover
+   * Header / Footer: --glass-bg-bar
+   */
+  --glass-bg-bar: 0.48;
+  --glass-bg-card: 0.44;
+  --glass-bg-card-hover: 0.54;
+  --glass-bg-btn: 0.07;
+  --glass-bg-btn-hover: 0.12;
+  --glass-bg-btn-disabled: 0.05;
+
+  /* Liquid glass – sombras e bordas (reduzir = menos branco/leitoso) */
+  --glass-bg: rgba(var(--glass-tint-rgb), 0.44);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 18px 36px rgba(0, 0, 0, 0.34);
+  --glass-blur: blur(18px);
+
+  /* Distorção “água”: blur + saturate + contrast (não linear, mais refração).
+   * Ajustar aqui afeta todos os glass (header, footer, cards, botões). */
+  --glass-backdrop: blur(20px) saturate(1.25) contrast(1.06);
+
+  /* Vidro – diagonal clara vs escura (valores menores = mais transparente) */
+  --glass-rim: rgba(255, 255, 255, 0.14);
+  --glass-rim-outer: rgba(255, 255, 255, 0.08);
+  --glass-diagonal-light: rgba(255, 255, 255, 0.18);
+  --glass-diagonal-light-soft: rgba(255, 255, 255, 0.09);
+  --glass-diagonal-light-fume: rgba(255, 255, 255, 0.05);
+  --glass-diagonal-dark: rgba(0, 0, 0, 0.26);
+  --glass-diagonal-dark-soft: rgba(0, 0, 0, 0.16);
+
+  /* Reflexos do fundo */
+  --glass-glow-blue: rgba(60, 134, 255, 0.18);
+  --glass-glow-pink: rgba(225, 75, 109, 0.15);
+  --glass-glow-purple: rgba(255, 160, 0, 0.14);
+}

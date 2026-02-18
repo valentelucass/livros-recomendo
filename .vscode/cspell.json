@@ -1,0 +1,35 @@
+{
+  "version": "0.2",
+  "language": "pt,pt_BR,en",
+  "words": [
+    "favicon",
+    "afiliado",
+    "livros",
+    "cspell",
+    "livro",
+    "backdrop",
+    "blur",
+    "glassmorphism",
+    "viewport",
+    "preconnect",
+    "rel",
+    "noopener",
+    "unsplash",
+    "loading",
+    "objectfit",
+    "flexbox",
+    "minmax",
+    "stylesheet"
+  ],
+  "ignorePaths": [
+    "node_modules",
+    "**/*.min.js",
+    "**/*.min.css",
+    "**/assets/*.ico",
+    "**/assets/*.png",
+    "**/assets/*.jpg",
+    "**/assets/*.svg",
+    "**/.git"
+  ],
+  "ignoreRegExpList": ["/[\\w\\.-]+@[\\w.-]+\\.\\w+/"]
+}

@@ -1,0 +1,98 @@
+@media (max-width: 900px) {
+  .livros-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    position: relative;
+    isolation: isolate;
+    background: none;
+    background-color: #0b0f18;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(900px 600px at 10% 0%, rgba(0, 200, 180, 0.85), transparent 65%),
+      radial-gradient(900px 600px at 90% 0%, rgba(255, 80, 0, 0.9), transparent 65%),
+      radial-gradient(800px 500px at 50% 20%, rgba(0, 0, 0, 0.541), transparent 70%),
+      radial-gradient(800px 500px at 30% 45%, rgba(255, 0, 90, 0.4), transparent 70%),
+      radial-gradient(900px 600px at 70% 50%, rgba(255, 140, 0, 0.5), transparent 65%),
+      radial-gradient(900px 600px at 15% 85%, rgba(0, 200, 180, 0.75), transparent 65%),
+      radial-gradient(900px 600px at 85% 90%, rgba(255, 80, 0, 0.8), transparent 65%);
+    background-repeat: no-repeat;
+  }
+
+  .header {
+    padding: 0.9rem 1rem;
+    border-radius: 12px;
+  }
+
+  .footer {
+    padding: 1.1rem 1rem;
+    border-radius: 12px;
+  }
+
+  .header-content {
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo-link {
+    gap: 0.5rem;
+  }
+
+  .logo-img {
+    height: 42px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .main {
+    padding: 3rem 1rem;
+  }
+
+  .hero {
+    margin-bottom: 2.5rem;
+    padding-inline: 0.2rem;
+  }
+
+  .hero-titulo {
+    font-size: clamp(1.4rem, 6.4vw, 1.8rem);
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    max-width: none;
+    margin: 0 auto 0.85rem;
+    white-space: normal;
+    text-wrap: balance;
+  }
+
+  .hero-sub {
+    font-size: clamp(0.88rem, 3.8vw, 0.98rem);
+    line-height: 1.35;
+    max-width: 31ch;
+    margin: 0 auto;
+    text-wrap: pretty;
+  }
+
+  .livros-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .paginacao {
+    flex-direction: column;
+  }
+}

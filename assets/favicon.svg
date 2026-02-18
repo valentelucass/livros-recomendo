@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="icon-shape">
+      <circle cx="16" cy="16" r="14" />
+    </clipPath>
+    <radialGradient id="g1" cx="15%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#00c8b4" stop-opacity="0.8" />
+      <stop offset="60%" stop-color="#00c8b4" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="g2" cx="85%" cy="15%" r="78%">
+      <stop offset="0%" stop-color="#ff5000" stop-opacity="0.85" />
+      <stop offset="60%" stop-color="#ff5000" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="g3" cx="70%" cy="85%" r="82%">
+      <stop offset="0%" stop-color="#ffc800" stop-opacity="0.9" />
+      <stop offset="65%" stop-color="#ffc800" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="g4" cx="40%" cy="75%" r="76%">
+      <stop offset="0%" stop-color="#ff005a" stop-opacity="0.7" />
+      <stop offset="60%" stop-color="#ff005a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <g clip-path="url(#icon-shape)">
+    <rect width="32" height="32" fill="#0b0f18" />
+    <rect width="32" height="32" fill="url(#g1)" />
+    <rect width="32" height="32" fill="url(#g2)" />
+    <rect width="32" height="32" fill="url(#g3)" />
+    <rect width="32" height="32" fill="url(#g4)" />
+  </g>
+</svg>

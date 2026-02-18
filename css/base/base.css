@@ -1,0 +1,26 @@
+body {
+  font-family: var(--font);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(1200px 800px at 15% 20%, rgba(0, 200, 180, 0.8), transparent 60%),
+    radial-gradient(1000px 900px at 85% 15%, rgba(255, 80, 0, 0.85), transparent 60%),
+    radial-gradient(1200px 1000px at 70% 85%, rgba(255, 200, 0, 0.9), transparent 65%),
+    radial-gradient(900px 700px at 40% 75%, rgba(255, 0, 90, 0.7), transparent 60%);
+
+  background-color: #0b0f18;
+  background-attachment: fixed;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:where(a, button):focus-visible {
+  outline: 2px solid rgba(245, 247, 255, 0.95);
+  outline-offset: 3px;
+}
