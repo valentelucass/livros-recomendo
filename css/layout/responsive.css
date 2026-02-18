@@ -17,9 +17,11 @@
     margin: 6px 0;
     border-radius: 18px;
     overflow-x: hidden;
-    min-height: calc(100vh - 12px);
-    min-height: calc(100svh - 12px);
-    min-height: calc(100dvh - 12px);
+    padding-bottom: env(safe-area-inset-bottom);
+    min-height: calc(100vh - 12px + env(safe-area-inset-bottom));
+    min-height: calc(100svh - 12px + env(safe-area-inset-bottom));
+    min-height: calc(100dvh - 12px + env(safe-area-inset-bottom));
+    min-height: calc(100lvh - 12px + env(safe-area-inset-bottom));
   }
 
   body::before {
@@ -27,11 +29,12 @@
     position: fixed;
     top: 6px;
     right: 0;
-    bottom: -20vh;
+    bottom: calc(-20vh - env(safe-area-inset-bottom));
     left: 0;
     border-radius: 18px;
-    min-height: 120vh;
-    min-height: 120dvh;
+    min-height: calc(120vh + env(safe-area-inset-bottom));
+    min-height: calc(120dvh + env(safe-area-inset-bottom));
+    min-height: calc(120lvh + env(safe-area-inset-bottom));
     z-index: -1;
     pointer-events: none;
     background:
