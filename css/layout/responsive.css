@@ -14,9 +14,9 @@
     isolation: isolate;
     background: none;
     background-color: #0b0f18;
-    margin: 6px;
+    margin: 6px 0;
     border-radius: 18px;
-    overflow: hidden;
+    overflow-x: hidden;
     min-height: calc(100vh - 12px);
     min-height: calc(100svh - 12px);
     min-height: calc(100dvh - 12px);
@@ -26,9 +26,9 @@
     content: "";
     position: fixed;
     top: 6px;
-    right: 6px;
+    right: 0;
     bottom: -20vh;
-    left: 6px;
+    left: 0;
     border-radius: 18px;
     min-height: 120vh;
     min-height: 120dvh;
