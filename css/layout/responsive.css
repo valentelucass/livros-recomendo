@@ -5,23 +5,31 @@
 }
 
 @media (max-width: 768px) {
+  html {
+    background-color: #ffffff;
+  }
+
   body {
     position: relative;
     isolation: isolate;
     background: none;
     background-color: #0b0f18;
-    min-height: 100vh;
-    min-height: 100svh;
-    min-height: 100dvh;
+    margin: 6px;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: calc(100vh - 12px);
+    min-height: calc(100svh - 12px);
+    min-height: calc(100dvh - 12px);
   }
 
   body::before {
     content: "";
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 6px;
+    right: 6px;
     bottom: -20vh;
-    left: 0;
+    left: 6px;
+    border-radius: 18px;
     min-height: 120vh;
     min-height: 120dvh;
     z-index: -1;
@@ -100,5 +108,11 @@
 
   .paginacao {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  html {
+    background-color: #000000;
   }
 }
