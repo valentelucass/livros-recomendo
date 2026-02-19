@@ -15,11 +15,14 @@
     position: relative;
     isolation: isolate;
     background:
-      radial-gradient(900px 600px at 12% 14%, rgba(0, 200, 180, 0.82), transparent 62%),
-      radial-gradient(850px 640px at 86% 12%, rgba(255, 92, 0, 0.88), transparent 62%),
-      radial-gradient(900px 700px at 68% 82%, rgba(255, 196, 0, 0.86), transparent 64%),
-      radial-gradient(760px 620px at 26% 74%, rgba(255, 0, 96, 0.62), transparent 62%),
-      #0b0f18;
+      radial-gradient(860px 560px at 10% 12%, rgba(0, 200, 180, 0.84), transparent 60%),
+      radial-gradient(820px 560px at 90% 10%, rgba(255, 96, 0, 0.88), transparent 60%),
+      radial-gradient(760px 520px at 50% 28%, rgba(255, 210, 0, 0.48), transparent 63%),
+      radial-gradient(760px 520px at 20% 56%, rgba(255, 0, 100, 0.56), transparent 64%),
+      radial-gradient(760px 520px at 80% 62%, rgba(255, 150, 0, 0.52), transparent 64%),
+      radial-gradient(840px 560px at 14% 92%, rgba(0, 200, 180, 0.72), transparent 63%),
+      radial-gradient(840px 560px at 86% 96%, rgba(255, 85, 0, 0.76), transparent 63%),
+      #0e1320;
     margin: 0;
     border-radius: 0;
     overflow-x: hidden;
@@ -39,13 +42,17 @@
     z-index: -1;
     pointer-events: none;
     background:
-      radial-gradient(1000px 640px at 8% -5%, rgba(0, 200, 180, 0.9), transparent 66%),
-      radial-gradient(1000px 650px at 92% -3%, rgba(255, 90, 0, 0.92), transparent 66%),
-      radial-gradient(900px 620px at 52% 28%, rgba(255, 210, 0, 0.52), transparent 68%),
-      radial-gradient(860px 560px at 24% 52%, rgba(255, 0, 100, 0.58), transparent 69%),
-      radial-gradient(980px 640px at 12% 95%, rgba(0, 200, 180, 0.78), transparent 66%),
-      radial-gradient(980px 640px at 88% 98%, rgba(255, 85, 0, 0.82), transparent 66%);
+      radial-gradient(920px 560px at 6% -4%, rgba(0, 200, 180, 0.9), transparent 64%),
+      radial-gradient(920px 580px at 94% -2%, rgba(255, 90, 0, 0.92), transparent 64%),
+      radial-gradient(760px 460px at 50% 18%, rgba(255, 220, 0, 0.5), transparent 66%),
+      radial-gradient(700px 420px at 18% 36%, rgba(0, 170, 255, 0.36), transparent 67%),
+      radial-gradient(700px 420px at 84% 44%, rgba(255, 0, 110, 0.4), transparent 68%),
+      radial-gradient(780px 460px at 28% 62%, rgba(255, 0, 100, 0.56), transparent 68%),
+      radial-gradient(820px 470px at 72% 72%, rgba(255, 165, 0, 0.54), transparent 67%),
+      radial-gradient(900px 560px at 12% 98%, rgba(0, 200, 180, 0.8), transparent 64%),
+      radial-gradient(900px 560px at 88% 100%, rgba(255, 85, 0, 0.84), transparent 64%);
     background-repeat: no-repeat;
+    filter: saturate(1.1);
   }
 
   .header {
