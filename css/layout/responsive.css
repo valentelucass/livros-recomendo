@@ -18,27 +18,21 @@
       radial-gradient(900px 700px at 68% 82%, rgba(255, 196, 0, 0.86), transparent 64%),
       radial-gradient(760px 620px at 26% 74%, rgba(255, 0, 96, 0.62), transparent 62%),
       #0b0f18;
-    margin: 6px 0;
-    border-radius: 18px;
+    margin: 0;
+    border-radius: 0;
     overflow-x: hidden;
-    padding-bottom: env(safe-area-inset-bottom);
-    min-height: calc(100vh - 12px + env(safe-area-inset-bottom));
-    min-height: calc(100svh - 12px + env(safe-area-inset-bottom));
-    min-height: calc(100dvh - 12px + env(safe-area-inset-bottom));
-    min-height: calc(100lvh - 12px + env(safe-area-inset-bottom));
+    background-attachment: scroll;
+    padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
   }
 
   body::before {
     content: "";
     position: fixed;
-    top: 6px;
-    right: 0;
-    bottom: calc(-20vh - env(safe-area-inset-bottom));
-    left: 0;
-    border-radius: 18px;
-    min-height: calc(120vh + env(safe-area-inset-bottom));
-    min-height: calc(120dvh + env(safe-area-inset-bottom));
-    min-height: calc(120lvh + env(safe-area-inset-bottom));
+    inset: 0;
+    border-radius: 0;
     z-index: -1;
     pointer-events: none;
     background:
@@ -53,7 +47,7 @@
   }
 
   .header {
-    padding: 0.9rem 1rem;
+    padding: calc(0.9rem + env(safe-area-inset-top)) 1rem 0.9rem;
     border-radius: 12px;
   }
 
