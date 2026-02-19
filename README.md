@@ -1,3 +1,16 @@
+<!-- PORTFOLIO-FEATURED
+title: Livros que Recomendo — Amazon
+description: Landing page responsiva com curadoria pessoal de livros de tecnologia, paginação de cards e links de afiliado da Amazon.
+technologies: HTML5, CSS3, JavaScript (Vanilla)
+demo: https://github.com/valentelucass/livros-recomendo
+highlight: true
+image: public/foto.png
+-->
+
+<p align="center">
+  <img src="public/foto.png" alt="Capa do projeto Livros que Recomendo" width="1200">
+</p>
+
 # Site Livros Amazon
 
 Landing page estática com curadoria de livros de tecnologia, cards responsivos e paginação em JavaScript.
@@ -62,4 +75,3 @@ Pode ser publicado em qualquer hosting estático, como:
 ## Observação
 
 Os links de compra usam tag de afiliado (`tag=geradoroferta-20`).
-
