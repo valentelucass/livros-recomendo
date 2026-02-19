@@ -24,7 +24,7 @@
       radial-gradient(840px 560px at 86% 96%, rgba(255, 85, 0, 0.76), transparent 63%),
       #0e1320;
     margin: 0;
-    border-radius: 0;
+    border-radius: 18px;
     overflow-x: hidden;
     background-attachment: scroll;
     padding-bottom: 0;
@@ -38,7 +38,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    border-radius: 0;
+    border-radius: 18px;
     z-index: -1;
     pointer-events: none;
     background:
