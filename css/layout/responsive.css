@@ -6,14 +6,17 @@
 
 @media (max-width: 768px) {
   html {
-    background-color: #ffffff;
+    background-color: #0b0f18;
   }
 
   body {
     position: relative;
     isolation: isolate;
     background:
-      linear-gradient(to bottom, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 0.92) 100%),
+      radial-gradient(900px 600px at 12% 14%, rgba(0, 200, 180, 0.82), transparent 62%),
+      radial-gradient(850px 640px at 86% 12%, rgba(255, 92, 0, 0.88), transparent 62%),
+      radial-gradient(900px 700px at 68% 82%, rgba(255, 196, 0, 0.86), transparent 64%),
+      radial-gradient(760px 620px at 26% 74%, rgba(255, 0, 96, 0.62), transparent 62%),
       #0b0f18;
     margin: 6px 0;
     border-radius: 18px;
@@ -39,14 +42,14 @@
     z-index: -1;
     pointer-events: none;
     background:
-      radial-gradient(900px 600px at 10% 0%, rgba(0, 200, 180, 0.85), transparent 65%),
-      radial-gradient(900px 600px at 90% 0%, rgba(255, 80, 0, 0.9), transparent 65%),
-      radial-gradient(800px 500px at 50% 20%, rgba(0, 0, 0, 0.541), transparent 70%),
-      radial-gradient(800px 500px at 30% 45%, rgba(255, 0, 90, 0.4), transparent 70%),
-      radial-gradient(900px 600px at 70% 50%, rgba(255, 140, 0, 0.5), transparent 65%),
-      radial-gradient(900px 600px at 15% 85%, rgba(0, 200, 180, 0.75), transparent 65%),
-      radial-gradient(900px 600px at 85% 90%, rgba(255, 80, 0, 0.8), transparent 65%);
+      radial-gradient(1000px 640px at 8% -5%, rgba(0, 200, 180, 0.9), transparent 66%),
+      radial-gradient(1000px 650px at 92% -3%, rgba(255, 90, 0, 0.92), transparent 66%),
+      radial-gradient(900px 620px at 52% 28%, rgba(255, 210, 0, 0.52), transparent 68%),
+      radial-gradient(860px 560px at 24% 52%, rgba(255, 0, 100, 0.58), transparent 69%),
+      radial-gradient(980px 640px at 12% 95%, rgba(0, 200, 180, 0.78), transparent 66%),
+      radial-gradient(980px 640px at 88% 98%, rgba(255, 85, 0, 0.82), transparent 66%);
     background-repeat: no-repeat;
+    filter: saturate(1.1);
   }
 
   .header {
@@ -117,6 +120,6 @@
 
 @media (max-width: 768px) and (prefers-color-scheme: dark) {
   html {
-    background-color: #000000;
+    background-color: #0b0f18;
   }
 }
