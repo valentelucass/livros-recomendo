@@ -1,0 +1,18 @@
+:root {
+  --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --texto-principal: #f5f7ff;
+  --texto-secundario: #b8c1d6;
+  --cor-destaque: #f5f7ff;
+  --largura-maxima-conteudo: 1200px;
+  --raio-painel: 16px;
+  --raio-capa: 10px;
+  --raio-botao: 12px;
+  --respiro-flutuante: clamp(0.6rem, 1.6vw, 1rem);
+  --respiro-lateral: clamp(0.75rem, 2.4vw, 1.4rem);
+
+  --fundo-base: #090d1a;
+  --fundo-cor-1: #ff5c7a;
+  --fundo-cor-2: #8a5cff;
+  --fundo-cor-3: #00ffd1;
+  --fundo-cor-4: #ff9f1c;
+}

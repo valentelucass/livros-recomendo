@@ -1,0 +1,18 @@
+.paginacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.25rem 0;
+}
+
+.botao-navegacao {
+  min-width: 10rem;
+}
+
+.pagina-atual {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--texto-secundario);
+}

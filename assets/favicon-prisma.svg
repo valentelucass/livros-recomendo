@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="recorte-favicon-prisma">
+      <circle cx="32" cy="32" r="28"/>
+    </clipPath>
+
+    <radialGradient id="fundo-favicon-prisma" cx="52%" cy="46%" r="70%">
+      <stop offset="0%" stop-color="#161f3f"/>
+      <stop offset="60%" stop-color="#0a0f23"/>
+      <stop offset="100%" stop-color="#050913"/>
+    </radialGradient>
+
+    <linearGradient id="arco-iris-favicon-prisma" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffd166"/>
+      <stop offset="23%" stop-color="#ff9f1c"/>
+      <stop offset="45%" stop-color="#ff5c7a"/>
+      <stop offset="66%" stop-color="#8a5cff"/>
+      <stop offset="86%" stop-color="#00ffd1"/>
+      <stop offset="100%" stop-color="#66d9ff"/>
+    </linearGradient>
+
+    <radialGradient id="halo-favicon-prisma" cx="82%" cy="18%" r="58%">
+      <stop offset="0%" stop-color="#ff9f1c" stop-opacity="0.8"/>
+      <stop offset="64%" stop-color="#ff9f1c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <circle cx="32" cy="32" r="30" fill="#04070f"/>
+
+  <g clip-path="url(#recorte-favicon-prisma)">
+    <rect width="64" height="64" fill="url(#fundo-favicon-prisma)"/>
+    <rect width="64" height="64" fill="url(#halo-favicon-prisma)"/>
+
+    <path
+      d="M -8 52 C 10 42, 24 31, 74 12"
+      fill="none"
+      stroke="url(#arco-iris-favicon-prisma)"
+      stroke-width="13"
+      stroke-linecap="round"
+      stroke-opacity="0.9"
+    />
+    <path
+      d="M -6 24 C 12 18, 24 22, 70 42"
+      fill="none"
+      stroke="#b5a4ff"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-opacity="0.22"
+    />
+    <ellipse cx="24" cy="16" rx="16" ry="8" fill="#ffffff" fill-opacity="0.18"/>
+  </g>
+
+  <circle cx="32" cy="32" r="28.3" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1"/>
+</svg>

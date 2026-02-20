@@ -1,6 +1,6 @@
-<!-- PORTFOLIO-FEATURED
+﻿<!-- PORTFOLIO-FEATURED
 title: Livros que Recomendo — Amazon
-description: Landing page responsiva com curadoria pessoal de livros de tecnologia, paginação de cards e links de afiliado da Amazon.
+description: Landing page responsiva com curadoria pessoal de livros de tecnologia, paginação de cartões e links de afiliado da Amazon.
 technologies: HTML5, CSS3, JavaScript (Vanilla)
 demo: https://github.com/valentelucass/livros-recomendo
 highlight: true
@@ -13,7 +13,7 @@ image: public/foto.png
 
 # Site Livros Amazon
 
-Landing page estática com curadoria de livros de tecnologia, cards responsivos e paginação em JavaScript.
+Landing page estática com curadoria de livros de tecnologia, cartões responsivos e paginação em JavaScript.
 
 ## Tecnologias
 
@@ -26,12 +26,16 @@ Landing page estática com curadoria de livros de tecnologia, cards responsivos 
 ```text
 .
 ├── index.html
-├── script.js
+├── js/
+│   ├── constantes/
+│   ├── principal.js
+│   └── modulos/
 ├── assets/
 ├── public/
 └── css/
     ├── base/
     ├── components/
+    ├── efeitos/
     └── layout/
 ```
 
@@ -52,17 +56,20 @@ http://127.0.0.1:4173
 ## Principais recursos
 
 - Layout responsivo para desktop e mobile.
-- Cards com capa, título, autor e descrição.
+- Cartões com capa, título, autor e descrição.
 - Botões com links de afiliado para Amazon.
-- Paginação de cards no front-end.
+- Paginação de cartões no front-end.
+- Fundo animado em WebGL (vanilla) com efeito líquido.
 
 ## Customização rápida
 
-- Conteúdo dos livros: `index.html`
-- Comportamento de paginação: `script.js`
-- Estilos globais e tema: `css/base/variables.css` e `css/base/base.css`
+- Conteúdo dos livros: `js/constantes/livros.js`
+- Configurações globais de JS: `js/constantes/configuracoes.js`
+- Comportamentos JS: `js/principal.js` e `js/modulos/*.js`
+- Estilos globais e tema: `css/base/variaveis.css` e `css/base/base.css`
 - Componentes visuais: `css/components/*.css`
-- Regras responsivas: `css/layout/responsive.css`
+- Efeitos visuais: `css/efeitos/*.css` (fundo + superficie-vidro)
+- Regras responsivas: `css/layout/responsivo.css`
 
 ## Deploy
 
@@ -72,6 +79,9 @@ Pode ser publicado em qualquer hosting estático, como:
 - Netlify
 - Vercel (modo estático)
 
+Para Vercel, o projeto já inclui `vercel.json` com headers de segurança e cache de assets para produção.
+
 ## Observação
 
 Os links de compra usam tag de afiliado (`tag=geradoroferta-20`).
+

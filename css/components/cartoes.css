@@ -1,0 +1,69 @@
+.cartao-livro {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+  border-radius: var(--raio-painel);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.cartao-livro-capa {
+  width: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 0.95rem;
+  border-radius: var(--raio-capa);
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    2px 4px 12px rgba(0, 0, 0, 0.1),
+    4px 8px 20px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+}
+
+.cartao-livro-capa img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: inherit;
+  background: #ffffff;
+}
+
+.cartao-livro-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-livro-conteudo h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--texto-principal);
+}
+
+.livro-autor {
+  margin-bottom: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--texto-secundario);
+}
+
+.livro-descricao {
+  flex: 1;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--texto-secundario);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.botao-afiliado {
+  width: 100%;
+}

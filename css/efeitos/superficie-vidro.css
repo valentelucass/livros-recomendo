@@ -1,0 +1,157 @@
+.superficie-vidro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  isolation: isolate;
+  overflow: hidden;
+  transition: opacity 0.26s ease-out;
+}
+
+.superficie-vidro--barra {
+  --superficie-vidro-fundo: 0.08;
+  --superficie-vidro-saturacao: 1.08;
+  border-radius: var(--raio-painel);
+}
+
+.superficie-vidro--cartao {
+  --superficie-vidro-fundo: 0.06;
+  --superficie-vidro-saturacao: 1.04;
+  border-radius: var(--raio-painel);
+}
+
+.superficie-vidro--botao {
+  --superficie-vidro-fundo: 0.1;
+  --superficie-vidro-saturacao: 1.18;
+  border-radius: var(--raio-botao);
+  position: relative;
+}
+
+.superficie-vidro--svg {
+  background: light-dark(
+    hsl(0 0% 100% / var(--superficie-vidro-fundo, 0)),
+    hsl(0 0% 0% / var(--superficie-vidro-fundo, 0))
+  );
+  backdrop-filter: var(--superficie-vidro-filtro, url(#filtro-superficie-vidro)) saturate(var(--superficie-vidro-saturacao, 1));
+  -webkit-backdrop-filter: var(--superficie-vidro-filtro, url(#filtro-superficie-vidro)) saturate(var(--superficie-vidro-saturacao, 1));
+  box-shadow:
+    0 0 2px 1px light-dark(color-mix(in oklch, black, transparent 85%), color-mix(in oklch, white, transparent 65%))
+      inset,
+    0 0 10px 4px light-dark(color-mix(in oklch, black, transparent 90%), color-mix(in oklch, white, transparent 85%))
+      inset,
+    0 4px 16px rgba(17, 17, 26, 0.05),
+    0 8px 24px rgba(17, 17, 26, 0.05),
+    0 16px 56px rgba(17, 17, 26, 0.05),
+    0 4px 16px rgba(17, 17, 26, 0.05) inset,
+    0 8px 24px rgba(17, 17, 26, 0.05) inset,
+    0 16px 56px rgba(17, 17, 26, 0.05) inset;
+}
+
+.superficie-vidro--botao.superficie-vidro--svg {
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.45) inset,
+    0 -12px 18px rgba(5, 8, 20, 0.24) inset,
+    0 8px 18px rgba(5, 8, 20, 0.32),
+    0 14px 28px rgba(5, 8, 20, 0.34);
+}
+
+.superficie-vidro--botao.superficie-vidro--svg::before {
+  content: '';
+  position: absolute;
+  inset: 1px 1px 46%;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  z-index: 0;
+}
+
+.superficie-vidro--botao.superficie-vidro--svg::after {
+  content: '';
+  position: absolute;
+  inset: 40% -20% -50%;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(70% 95% at 50% 0%, rgba(255, 113, 201, 0.2), rgba(255, 113, 201, 0));
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+.superficie-vidro--botao.superficie-vidro--svg > * {
+  position: relative;
+  z-index: 1;
+}
+
+.superficie-vidro--fallback {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
+  -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.2),
+    0 2px 16px 0 rgba(31, 38, 135, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.4),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.superficie-vidro--botao.superficie-vidro--fallback {
+  border-color: rgba(255, 255, 255, 0.42);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.52) inset,
+    0 -8px 14px rgba(5, 8, 20, 0.24) inset,
+    0 8px 20px rgba(5, 8, 20, 0.3);
+}
+
+@media (prefers-color-scheme: dark) {
+  .superficie-vidro--fallback {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px) saturate(1.8) brightness(1.2);
+    -webkit-backdrop-filter: blur(12px) saturate(1.8) brightness(1.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+      inset 0 -1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+  .superficie-vidro--fallback {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 0 rgba(255, 255, 255, 0.3);
+  }
+
+  .superficie-vidro--fallback::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .superficie-vidro--fallback {
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .superficie-vidro--fallback::before {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+}
+
+.superficie-vidro:focus-visible {
+  outline: 2px solid light-dark(#007aff, #0a84ff);
+  outline-offset: 2px;
+}
+
+.superficie-vidro__defs {
+  position: fixed;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}

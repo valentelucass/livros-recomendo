@@ -1,0 +1,69 @@
+@media (min-width: 700px) {
+  .grade-livros {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .paginacao {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    padding: calc(1rem + env(safe-area-inset-top)) 1.5rem 1rem;
+    border-radius: var(--raio-painel);
+  }
+
+  .rodape {
+    padding: 1.25rem 1.5rem calc(1.25rem + env(safe-area-inset-bottom));
+    border-radius: var(--raio-painel);
+  }
+
+  .navegacao {
+    display: flex;
+    align-items: center;
+    gap: 1.35rem;
+  }
+
+  .marca-link {
+    gap: 0.75rem;
+  }
+
+  .marca-imagem {
+    height: 54px;
+  }
+
+  .marca-texto {
+    font-size: 1.35rem;
+  }
+
+  .principal {
+    padding: 4rem 1.5rem;
+  }
+
+  .destaque {
+    margin-bottom: 4rem;
+    padding-inline: 0;
+  }
+
+  .destaque-subtitulo {
+    max-width: 540px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .livros-titulo {
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grade-livros {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}

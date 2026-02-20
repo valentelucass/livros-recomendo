@@ -1,0 +1,43 @@
+.fundo-animado {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--fundo-base);
+}
+
+.fundo-animado__canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.fundo-animado::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(84% 60% at 50% 42%, rgba(5, 8, 20, 0) 28%, rgba(5, 8, 20, 0.64) 100%);
+}
+
+.fundo-animado::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(52% 40% at 18% 18%, rgba(255, 178, 58, 0.14), transparent 72%),
+    radial-gradient(44% 34% at 84% 16%, rgba(59, 214, 255, 0.12), transparent 74%),
+    radial-gradient(56% 44% at 48% 78%, rgba(255, 75, 196, 0.12), transparent 78%),
+    linear-gradient(180deg, rgba(5, 8, 20, 0.66) 0%, rgba(5, 8, 20, 0.52) 26%, rgba(5, 8, 20, 0.74) 100%);
+}
+
+.fundo-animado.fundo-animado--fallback {
+  background:
+    radial-gradient(1000px 700px at 20% 16%, rgba(255, 92, 122, 0.3), transparent 62%),
+    radial-gradient(1000px 700px at 80% 18%, rgba(138, 92, 255, 0.34), transparent 64%),
+    radial-gradient(1000px 760px at 52% 86%, rgba(0, 255, 209, 0.28), transparent 64%),
+    linear-gradient(180deg, rgba(5, 8, 20, 0.58) 0%, rgba(5, 8, 20, 0.78) 100%),
+    var(--fundo-base);
+}

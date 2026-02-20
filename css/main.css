@@ -1,16 +1,21 @@
 /* Base */
-@import "base/variables.css";
-@import "base/reset.css";
+@import "base/variaveis.css";
+@import "base/reinicio.css";
 @import "base/base.css";
 
+/* Efeitos */
+@import "efeitos/fundo.css";
+@import "efeitos/superficie-vidro.css";
+
 /* Layout */
-@import "layout/main.css";
+@import "layout/principal.css";
 
-/* Components */
-@import "components/header.css";
-@import "components/footer.css";
-@import "components/cards.css";
-@import "components/pagination.css";
+/* Componentes */
+@import "components/cabecalho.css";
+@import "components/rodape.css";
+@import "components/botoes.css";
+@import "components/cartoes.css";
+@import "components/paginacao.css";
 
-/* Responsive (sempre por último para sobrescrever componentes) */
-@import "layout/responsive.css";
+/* Responsivo */
+@import "layout/responsivo.css";

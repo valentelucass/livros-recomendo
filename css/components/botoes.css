@@ -1,0 +1,38 @@
+.botao-vidro {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.6rem 1rem;
+  border-radius: var(--raio-botao);
+  border: 0;
+  background: transparent;
+  appearance: none;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: var(--texto-principal);
+  text-shadow: 0 1px 0 rgba(5, 8, 20, 0.35);
+  cursor: pointer;
+  transition: opacity 180ms ease, transform 150ms ease;
+  will-change: transform;
+}
+
+.botao-vidro.superficie-vidro--botao:hover {
+  transform: translateY(-2px) scale(1.01);
+}
+
+.botao-vidro.superficie-vidro--botao:active {
+  transform: translateY(0) scale(0.995);
+}
+
+.botao-vidro:disabled,
+.botao-vidro[aria-disabled='true'] {
+  opacity: 0.72;
+  cursor: not-allowed;
+  transform: none;
+}
