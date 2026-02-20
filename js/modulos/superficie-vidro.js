@@ -197,17 +197,19 @@ function suportaFiltrosSvgBackdrop() {
     return false;
   }
 
-  const agente = navigator.userAgent;
-  const ehWebkit = /Safari/.test(agente) && !/Chrome|Chromium|CriOS/.test(agente);
-  const ehFirefox = /Firefox/.test(agente);
+  const suporteCss = typeof CSS !== 'undefined' && typeof CSS.supports === 'function';
+  const suportaBackdropPadrao = suporteCss ? CSS.supports('backdrop-filter', 'blur(0)') : false;
+  const suportaBackdropWebkit = suporteCss ? CSS.supports('-webkit-backdrop-filter', 'blur(0)') : false;
 
-  if (ehWebkit || ehFirefox) {
+  if (!suportaBackdropPadrao && !suportaBackdropWebkit) {
     return false;
   }
 
   const div = document.createElement('div');
   div.style.backdropFilter = 'url(#teste-filtro-vidro)';
-  return div.style.backdropFilter !== '';
+  div.style.webkitBackdropFilter = 'url(#teste-filtro-vidro)';
+
+  return div.style.backdropFilter !== '' || div.style.webkitBackdropFilter !== '';
 }
 
 function gerarMapaDeslocamento(elemento, ids, config) {
