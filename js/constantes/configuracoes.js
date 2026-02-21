@@ -1,10 +1,6 @@
 export const SELETORES = {
   alvoFundo: '[data-fundo-animado]',
-  gradeLivros: '#grade-livros',
-  botaoAnterior: '#botao-anterior',
-  botaoProximos: '#botao-proximos',
-  informacaoPagina: '#informacao-pagina',
-  paginacao: '#paginacao'
+  gradeLivros: '#grade-livros'
 };
 
 export const CONFIGURACAO_FUNDO_ONDAS = {
@@ -22,12 +18,5 @@ export const CONFIGURACAO_FUNDO_ONDAS = {
 };
 
 export const CONFIGURACAO_PAGINACAO = {
-  itensPorPagina: 9,
-  seletores: {
-    gradeLivros: SELETORES.gradeLivros,
-    botaoAnterior: SELETORES.botaoAnterior,
-    botaoProximos: SELETORES.botaoProximos,
-    informacaoPagina: SELETORES.informacaoPagina,
-    paginacao: SELETORES.paginacao
-  }
+  itensPorPagina: 9
 };
