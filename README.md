@@ -2,7 +2,7 @@
 title: Livros que Recomendo — Amazon
 description: Landing page responsiva com curadoria pessoal de livros de tecnologia, paginação de cartões e links de afiliado da Amazon.
 technologies: HTML5, CSS3, JavaScript (Vanilla)
-demo: https://github.com/valentelucass/livros-recomendo
+demo: https://livros-recomendo.vercel.app/
 highlight: true
 image: public/foto.png
 -->
